@@ -3,11 +3,12 @@
  * @return {boolean} il confronto tra parola utente e il nuovo sort è lo stesso?
  */
 function isPalindrome(word){
-    const charArray = word.split("");
+    wordLowercase = word.toLowerCase();
+    const charArray = wordLowercase.split("");
     const charReverse = charArray.reverse();
     const palindrome = charReverse.join("");
 
-    if (word === palindrome){
+    if (wordLowercase === palindrome){
         console.log("Sì, è palindromo");
         return true;
     } else{
