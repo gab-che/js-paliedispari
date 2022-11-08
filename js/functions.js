@@ -33,12 +33,13 @@ function createRandomNum(){
  */
 function isOddOrEven(num1, num2){
     sum = num1 + num2;
+    console.log("Il risultato è: " + sum)
 
     if (sum % 2 === 0){
         console.log("La somma dei due numeri è pari")
-        return "is even"
+        return "pari"
     } else{
         console.log("La somma dei due numeri è dispari")
-        return "is odd"
+        return "dispari"
     }
 }
