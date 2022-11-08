@@ -22,6 +22,23 @@ function isPalindrome(word){
  */
 function createRandomNum(){
     randomNum = (Math.ceil(Math.random() * 5));
-    console.log(randomNum);
+    // console.log(randomNum);
     return randomNum;
+}
+
+/**
+ * @param {number} numero scelto dall'utente
+ * @param {number} numero generato con la funzione createRandomNum
+ * @return {string} la somma dei due argomenti dà un numero pari o dispari?
+ */
+function isOddOrEven(num1, num2){
+    sum = num1 + num2;
+
+    if (sum % 2 === 0){
+        console.log("La somma dei due numeri è pari")
+        return "is even"
+    } else{
+        console.log("La somma dei due numeri è dispari")
+        return "is odd"
+    }
 }
