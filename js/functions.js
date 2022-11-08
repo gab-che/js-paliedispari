@@ -16,3 +16,12 @@ function isPalindrome(word){
         return false;
     }
 }
+
+/**
+ * Genera un numero random
+ */
+function createRandomNum(){
+    randomNum = (Math.ceil(Math.random() * 5));
+    console.log(randomNum);
+    return randomNum;
+}
