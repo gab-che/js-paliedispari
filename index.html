@@ -10,15 +10,45 @@
 <body>
     <main>
         <div class="container">
+            <section class="py-5" id="palindrome">
+                <div class="row">
+                    <div class="col-6 m-auto">
+                        <h2 class="mb-3">?omordnilap è</h2>
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="insert_name" placeholder="Inserisci una parola o un numero">
+                            <button class="btn btn-dark" id="name_validator">Scopri se è palindromo</button>
+                        </div>
+                        <p class="py-3">Rullo di tamburi... <span></span></p>
+                    </div>
+                </div>
+            </section>
 
+            <section class="py-5" id="morra">
+                <div class="row">
+                    <div class="col-6 m-auto">
+                        <h2 class="mb-3">Sa murra con l'AI</h2>
+                        <div class="input-group">
+                            <select name="even_odd" id="even_odd" class="form-select">
+                                <option value="pari">Pari</option>
+                                <option value="dispari">Dispari</option>
+                            </select>
+                            <input class="form-control" type="number" name="num_user" placeholder="Numero da 1 a 5">
+                            <button class="btn btn-dark btn-outline-light" id="game_result" type="submit">Hai vinto?</button>
+                            <button class="btn btn-dark btn-outline-light" id="reset_string" type="submit">Reset</button>
+                        </div>
+                        <p class="py-3">Il responso: <span id="win_lose"></span></p>
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <p>Il numero del computer: <span id="num_comp"></span></p>
+                            </div>
+                            <div class="col">
+                                <p>La somma dei due numeri è <span id="num_sum"></span></p>
+                            </div>
+                        </div>
 
-            <select name="even_odd" id="">
-                <option value="pari">Pari</option>
-                <option value="dispari">Dispari</option>
-            </select>
-            <input type="number" name="num_user" placeholder="numero da 1 a 5">
-            <!-- <button id="num_computer">Num computer</button> -->
-            <button id="game_result" type="submit">Hai vinto?</button>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <script src="js/functions.js"></script>

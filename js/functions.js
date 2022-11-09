@@ -1,6 +1,6 @@
 /**
  * @param {string} parola inserita dall'utente
- * @return {boolean} il confronto tra parola utente e il nuovo sort è lo stesso?
+ * @return {string} il confronto tra parola utente e il nuovo sort è lo stesso?
  */
 function isPalindrome(word){
     wordLowercase = word.toLowerCase();
@@ -9,11 +9,9 @@ function isPalindrome(word){
     const palindrome = charReverse.join("");
 
     if (wordLowercase === palindrome){
-        console.log("Sì, è palindromo");
-        return true;
+        return "Sì, è palindromo";
     } else{
-        console.log("No, non è palindromo");
-        return false;
+        return "No, non è palindromo";
     }
 }
 
@@ -22,7 +20,6 @@ function isPalindrome(word){
  */
 function createRandomNum(){
     randomNum = (Math.ceil(Math.random() * 5));
-    // console.log(randomNum);
     return randomNum;
 }
 
@@ -33,13 +30,10 @@ function createRandomNum(){
  */
 function isOddOrEven(num1, num2){
     sum = num1 + num2;
-    console.log("Il risultato è: " + sum)
 
     if (sum % 2 === 0){
-        console.log("La somma dei due numeri è pari")
         return "pari"
     } else{
-        console.log("La somma dei due numeri è dispari")
         return "dispari"
     }
 }
